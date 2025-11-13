@@ -9,14 +9,12 @@ def print_menu():
     mm_options = {
         1: "Crear esquema",
         2: "Cargar datos desde CSV",
-        3: "Query por texto indexado",
-        4: "Query por campo numérico",
-        5: "Query de grafo (2+ tipos)",
-        6: "Query con relación inversa",
-        7: "Query con orden y paginación",
-        8: "Query con count()",
-        9: "Eliminar por condición",
-        10: "Eliminar todo",
+        3: "Query #1: Cambiar nombre",
+        4: "Query #2: Cambiar nombre",
+        5: "Query #3: Cambiar nombre",
+        6: "Query #4: Cambiar nombre",
+        7: "Eliminar por condición",
+        8: "Eliminar todo",
         0: "Salir",
     }
     for key in mm_options.keys():
@@ -58,41 +56,27 @@ def main():
             model.load_data(client)
 
         elif option == 3:
-            # Query: texto indexado
-            value = input("Valor de texto a buscar: ")
-            model.query_text_index(client, value)
+            # Query 1: Pedir input al usuario dependiendo de su modelado
+            model.query1(client)
 
         elif option == 4:
-            # Query: campo numérico
-            min_v = input("Ingrese el valor mínimo: ")
-            max_v = input("Ingrese el valor máximo: ")
-            model.query_numeric_index(client, min_v, max_v)
+            # Query 2: Pedir input al usuario dependiendo de su modelado
+            model.query2(client)
 
         elif option == 5:
-            # Query: grafo (2+ tipos)
-            # Agregar parametros si llegan a ser necesarios
-            model.query_graph_data(client)
+            # Query 3: Pedir input al usuario dependiendo de su modelado
+            model.query3(client)
 
         elif option == 6:
-            # Query: relación inversa
-            # Agregar parametros si llegan a ser necesarios
-            model.query_reverse_relation(client)
+            # Query 4: Pedir input al usuario dependiendo de su modelado
+            model.query4(client)
 
         elif option == 7:
-            # Query: orden y paginación
-            # Agregar parametros si llegan a ser necesarios (tipo de orden y offset)
-            model.query_order_and_pagination(client)
-
-        elif option == 8:
-            # Query: uso de count()
-            model.query_count_example(client)
-
-        elif option == 9:
             # Eliminar por condición
             # Agregar parametros si llegan a ser necesarios (valor de la condicion)
             model.delete_by_condition(client)
 
-        elif option == 10:
+        elif option == 8:
             # Eliminar todo el contenido del grafo
             confirm = input("¿Seguro que deseas eliminar TODO el grafo? (s/n): ")
             if confirm.lower() == "s":

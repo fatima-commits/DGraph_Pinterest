@@ -30,33 +30,19 @@ def load_data(client):
     pass
 
 # Queries
-def query_text_index(client, value):
-    """Query que utilice el índice de texto."""
+def query1(client):
     pass
 
 
-def query_numeric_index(client, min_value, max_value):
-    """Query que utilice el índice numérico."""
+def query2(client):
     pass
 
 
-def query_graph_data(client):
-    """Query que involucre al menos 2 tipos de nodos relacionados."""
+def query3(client):
     pass
     
 
-def query_reverse_relation(client):
-    """Query que use una relación inversa (@reverse)."""
-    pass
-
-
-def query_order_and_pagination(client):
-    """Query que ordene resultados y use paginación (first, offset)."""
-    pass
-
-
-def query_count_example(client):
-    """Query que use la función count()."""
+def query4(client):
     pass
 
 
