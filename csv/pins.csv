@@ -1,0 +1,13 @@
+pin_id,image_url,like_count,comment_count,views
+p1,https://pinterest-lab.example.com/img/p01.jpg,2010,2,31200
+p2,https://pinterest-lab.example.com/img/p02.jpg,22310,1023,83219
+p3,https://pinterest-lab.example.com/img/p03.jpg,4,0,320
+p4,https://pinterest-lab.example.com/img/p04.jpg,980,34,15400
+p5,https://pinterest-lab.example.com/img/p05.jpg,5600,210,48000
+p6,https://pinterest-lab.example.com/img/p06.jpg,730,12,9800
+p7,https://pinterest-lab.example.com/img/p07.jpg,12040,380,67000
+p8,https://pinterest-lab.example.com/img/p08.jpg,150,5,2100
+p9,https://pinterest-lab.example.com/img/p09.jpg,3300,95,25500
+p10,https://pinterest-lab.example.com/img/p10.jpg,410,8,5200
+p11,https://pinterest-lab.example.com/img/p11.jpg,8800,260,54300
+p12,https://pinterest-lab.example.com/img/p12.jpg,60,1,900
